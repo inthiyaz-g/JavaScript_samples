@@ -1,0 +1,17 @@
+// javscript cod efor finding no.of palindromes in a string
+let myString = "madam World, how are level";
+let words = myString.split(' '); // Split the string by spaces
+function retcount(words){
+let count =0
+for (let i = 0; i < words.length; i++) {
+    let reversedStr = words[i].split("").reverse().join("");
+//   console.log(reversedStr); // Print each word on a separate line
+ if(reversedStr ==words[i] ){
+       count = count+1;
+ }
+
+}
+return count;
+}
+let r = retcount(words);
+console.log(r);
